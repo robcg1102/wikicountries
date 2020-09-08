@@ -1,0 +1,142 @@
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+.flagnav{
+  width: 15%;
+}
+
+.flagInfo{
+  width: 250px;
+}
+
+.cardCountries:hover {
+  transform: scale(1.1);
+}
+
+.infocountry{
+  height: 90%;
+  width: 95%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #86C4BA;
+  border-radius: 15px;
+}
+
+.nameCountry{
+  width: 35%;
+}
+
+
+ul{
+  text-align: left;
+}
+
+.allinfo{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+}
+
+.moreinfo{
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home{
+  width: 100%;
+  text-align: center;
+  height: 93vh;
+}
+
+input{
+  border-radius: 8px;
+  padding: 5px 8px;
+}
+
+.result{
+  color: white;
+}
+
+.property{
+  position: fixed;
+  bottom: 0;
+  width: 80%;
+}
+
+.property a{
+  text-decoration: none;
+  color: #18303e;
+  font-weight: bolder;
+}
+
+
+.listCountries{
+  height: 94vh;
+  width: 30%;
+  top: 0;
+  left: 0;
+  background-color: #18303e;
+  padding: 20px 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .listCountries{
+    height: 20vh;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .cardCountries{
+    width: 200px;
+   }
+
+   .searchBar{
+     display: flex;
+     align-content: center;
+     flex-direction: column;
+   }
+   .infocountry{
+     margin-top: 215px;
+     flex-direction: column;
+     height: auto;
+     align-content: center;
+   }
+   .property{
+    margin-top: 150px;
+    width: 100%;
+    position: relative;
+   }
+   .nameCountry{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   .moreinfo{
+    justify-content: space-evenly; 
+    flex-direction: row;
+    width: 100%;
+   }
+   .home{
+    padding-top: 70px;
+    
+  }
+}
